@@ -14,16 +14,20 @@ window.onload = function() {
           confirmButton:'Entendido',
           callEvent:function(){
             Set_Read_Cookie();
+            location.replace("https://anzelozky.github.io/Tribos/nosotros.html")
           }
         })
       },
       cancelEvent:function(){
-        location.replace("https://www.google.com")
+        location.replace("https://www.google.com/")
+
       },
       cancelButton:'No.',
       confirmButton:'Si.',
     },
     )
+   } else if (isAnAdult != null) {
+    location.replace("https://anzelozky.github.io/Tribos/nosotros.html")
    };
 };
 

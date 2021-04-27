@@ -20,6 +20,9 @@ Font imports
 /*
 Standard style
 ==========================*/
+:root{
+  font-size: 16px;
+}
 body {line-height: 1.4;
   background-size: 110% 100%;
   background-repeat:no-repeat;
@@ -361,7 +364,7 @@ footer {
 h6{
     text-align: right;
     color: red;
-    font-size: 80%;
+    font-size: .60rem;
     font-family: FordAntennaCond-Medium;
 }
 #Privacidad-Div,#Contacto:not(#stripe1,#stripe2){
@@ -388,7 +391,7 @@ h6{
 .contacto-text{
   color:black;
   text-align: left;
-  font-size: 8px;
+  font-size: .5rem;
   font-family: FordAntennaCond-Medium;
 }
 .links{
@@ -409,7 +412,7 @@ h6{
   left: 23%;
 }
 .foot-text{
-  font-size: 7px;
+  font-size: .4375rem;
 }
 #stripe1{
   position: absolute;
