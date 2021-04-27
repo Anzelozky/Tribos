@@ -1,0 +1,508 @@
+/*
+Font imports
+==========================*/
+@font-face{
+  font-family: "FordAntennaCond-Bold";
+  src: url("../assets/Fuente/FordAntennaCond-Bold.ttf") format("truetype");
+}
+@font-face{
+  font-family: "FordAntennaCond-Black";
+  src: url("../assets/Fuente/FordAntennaCond-Black.ttf") format("truetype");
+}
+@font-face{
+  font-family: "FordAntennaCond-ExtraLight";
+  src: url("../assets/Fuente/FordAntennaCond-ExtraLight.ttf") format("truetype");
+}
+@font-face{
+  font-family: "FordAntennaCond-Medium";
+  src: url("../assets/Fuente/FordAntennaCond-Medium.ttf") format("truetype");
+}
+/*
+Standard style
+==========================*/
+body {line-height: 1.4;
+  background-size: 110% 100%;
+  background-repeat:no-repeat;
+  background-color: #cccccc;
+}
+.container-fluid{
+    padding-top: 4%;
+    height: 85%;
+}
+
+
+h5{
+    color: white;
+    font-size: 180%;
+    font-family: FordAntennaCond-ExtraLight;
+    font-weight: bolder;
+}
+
+.form-row label{
+  color:white;
+  font-size: 90%;
+  font-family: FordAntennaCond-Medium;
+  display: inline;
+}
+#Logo{
+    position: absolute;
+    left: 2%;
+}
+
+#menu_logo{
+    width: 130px;
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+}
+#botella_info{
+    width: 180px;
+    max-width: 100%;
+}
+
+#nav{
+    color: white;
+}
+
+#Info{
+  margin-left: 1.8em;
+  top:0;
+}
+/*
+ *  Scroll bar style
+ */
+
+#Info pre::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+#Info pre::-webkit-scrollbar
+{
+  width: 10px;
+  background-color: transparent;
+}
+
+#Info pre::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear,
+                     left bottom,
+                     left top,
+                     color-stop(0.44, rgb(255, 144, 51)),
+                     color-stop(0.72, rgb(255, 144, 51)),
+                     color-stop(0.86, rgb(255, 144, 51)));
+}
+
+#C-Info{
+  top: 15%;
+  left: 20%;
+  position: absolute;
+}
+#C-Info p{
+  color: white;
+  font-size: 100%;
+  font-family: FordAntennaCond-Medium;
+}
+#Info p, #Info pre{
+    color: white;
+    font-size: 100%;
+    font-family: FordAntennaCond-Medium;
+    text-align: justify;
+}
+
+#Info pre{
+  padding-top: 5%;
+  height: 300px;
+  padding-right: 7%;
+  white-space: pre-wrap;
+}
+#Text-T{
+  padding-top: 1%;
+  right: 10%;
+  position: absolute;
+}
+#Text-T h5{
+  color: black;
+  font-size: 180%;
+  font-family: FordAntennaCond-Medium;
+}
+#Text-T pre{
+  color: black;
+  font-size: 90%;
+  font-family: FordAntennaCond-Medium;
+}
+#Bottle-T{
+  width: 70%;
+  height: auto;
+  padding-top: 4%;
+  position: absolute;
+}
+#Side-Options-T{
+  position: absolute;
+  right: 25%;
+  padding-top: 1%;
+}
+#Shop-Icon{
+  position: absolute;
+  right: 0;
+  top: 45%;
+  width: 50%;
+}
+.card-body a{
+  right: 10;
+  bottom: 5;
+  position: absolute;
+}
+#Content-Row{
+    height: 100%;
+    padding-right: 6%;
+    padding-top: 2%;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+/*
+Topbar style
+==========================*/
+#topnav a{
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 100%;
+    font-family: FordAntennaCond-Medium;
+    padding:4px 4px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+#topnav a:not(.noun){
+  color:white;
+}
+
+#topnav {
+    color:white;
+    padding-top: 3.2%;
+    overflow: hidden;
+    margin-bottom: 1.5em;
+}
+
+#topnav a:hover:not(.active,.noun) {
+  background-color: #FF9033;
+  color: white;
+}
+
+#topnav a.active {
+  background-color: #FF9033;
+  color: white;
+}
+
+#topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  #topnav a {display: none;}
+  #topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #topnav.responsive {position: relative;padding-top: 0px;}
+  #topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #topnav.responsive a.noun {
+    display: none;
+  }
+}
+/*
+Topbar style B
+==========================*/
+#topnav-b a{
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 100%;
+    font-family: FordAntennaCond-Medium;
+    padding:4px 4px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+#topnav-b a:not(.noun){
+  color:black;
+}
+
+#topnav-b {
+    color:black;
+    padding-top: 3.2%;
+    overflow: hidden;
+}
+
+#topnav-b a:hover:not(.active,.noun) {
+  background-color: #FF9033;
+  color: white;
+}
+
+#topnav-b a.active {
+  background-color: #FF9033;
+  color: white;
+}
+
+#topnav-b .icon {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  #topnav-b a {display: none;}
+  #topnav-b a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #topnav-b.responsive {position: relative;padding-top: 0px;}
+  #topnav-b.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #topnav-b.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #topnav-b.responsive a.noun {
+    display: none;
+  }
+}
+/*
+SideMenu style
+==========================*/
+#Side-Menu{
+    text-align: right;
+    font-size: 100%;
+    font-family: FordAntennaCond-Medium;
+    overflow: auto;
+    color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 95%;
+  height: auto;
+}
+li a.shift, li a.noun {
+  display: inline-block;
+  padding: 8px;
+  text-decoration: none;
+}
+li a.active {
+  background-color: #FF9033;
+  color: white;
+}
+
+li a:hover:not(.active,.noun,.f-link) {
+  background-color: #FF9033;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  #Side-Menu{
+    padding-top: 5%;
+    text-align: right;
+    font-size: 50%;
+    padding-right: 20%;
+}
+  #Side-menu a.noun {
+    display: none;
+  }
+}
+/*
+Side-Menu Func style
+==========================*/
+
+.wrap:not(#Nosotros,#Vinedos,#Foot-Wrap,#Contacto-Wrap){
+  display: none;
+}
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*
+Footer style
+==========================*/
+footer {
+    position: absolute;
+    bottom: 0;
+    height:auto;
+    width: 100%;
+    text-align: center; 
+    position: fixed;
+    background-color: white;
+}
+h6{
+    text-align: right;
+    color: red;
+    font-size: 80%;
+    font-family: FordAntennaCond-Medium;
+}
+#Privacidad-Div,#Contacto:not(#stripe1,#stripe2){
+  left: 0;
+  top: 25;
+  bottom: 0
+}
+#Links-Div{
+  position: absolute;
+  left: 37%;
+}
+#Foot-Content{
+  left: 15%;
+}
+#Foot-Down-Content{
+  left: 10%;
+  position: absolute;
+  top: 80;
+}
+#Foot-Content{
+  padding-top: 0.5%;
+}
+
+.contacto-text{
+  color:black;
+  text-align: left;
+  font-size: 8px;
+  font-family: FordAntennaCond-Medium;
+}
+.links{
+  font-size: 10px;
+  color:black;
+}
+.foot-list {
+  list-style-type: none;
+}
+.fl-item, .fl-item1 {
+  padding-top: 2%;
+  text-decoration: none;
+}
+.fl-item1{
+  width: 50%;
+  position: absolute;
+  top: 25;
+  left: 23%;
+}
+.foot-text{
+  font-size: 7px;
+}
+#stripe1{
+  position: absolute;
+  top: 0;
+}
+#stripe2{
+  position: absolute;
+  top: 0;
+  right: 30;
+}
+.links-ico{
+  width: 20px;
+}
+.f-link{
+  padding-left: 16px;
+  position: absolute;
+}
+#strips{
+  position: absolute;
+  right: 5;
+  top: 10;
+  width: 150px;
+  max-width: 100%;
+}
+
+/*
+Form style
+==========================*/
+.form-control{
+  color:white;
+  background-color: transparent;
+}
+#Send{
+  background-color: #FF9033;
+  border-color: black;
+}
+/*
+Slider style
+==========================*/
+.hero-slider {position: relative;}
+.single-hs-item {height: 90%;background-size: cover;background-position: center center;position: relative;}
+.single-hs-item:before {content: '';position: absolute;width: auto;height: auto;left: 0;top: 0%;background-color: #000;opacity: .6;}
+.item-bg1 {
+background-image: url(../assets/profile_trib.png);
+}
+.item-bg2 {
+background-image: url(../assets/profile_trib.png);
+}
+.item-bg3 {
+background-image: url(../assets/profile_trib.png);
+}
+.item-bg4 {
+background-image: url(../assets/profile_trib.png);
+}
+.hero-text {padding: 0 15px;text-align: center;max-width: 1140px;margin-left: auto;margin-right: auto;position: relative;}
+.hero-text h1 {color: #fff;font-size: 50px;text-transform: capitalize;font-weight: 600;margin: 0;}
+.hero-text p {color: #fff;font-size: 17px;max-width: 600px;margin-left: auto;margin-right: auto;line-height: 30px;margin-top: 20px;margin-bottom: 35px;}
+.hero-slider .owl-item.active h1 {-animation: 1s .3s fadeInUp both;}
+.hero-slider .owl-item.active p {-webkit-animation: 1s .3s fadeInUp both;animation: 1s .3s fadeInUp both;}
+.hero-slider .owl-item.active .slider-btn {-webkit-animation: 1s .3s fadeInUp both;animation: 1s .3s fadeInUp both;}
+.owl-carousel .owl-nav button.owl-prev {background-color: #ff3547;position: absolute;left: 0;top: 50%;
+color: #fff;font-size: 30px;margin: -40px 0 0;border-radius: 0;height: 50px;width: 50px;}
+.owl-carousel .owl-nav button.owl-next {background-color: #ff3547;position: absolute;right: 0;top: 50%;color: #fff;font-size: 30px;margin: -40px 0 0;border-radius: 0;height: 50px;width: 50px;
+}
+.owl-theme .owl-nav {margin-top: 0;}
+.owl-dots {position: absolute;left: 0;right: 0; bottom: 20px;}
+.owl-theme .owl-dots .owl-dot span {width: 11px;height: 20px;}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {background: #ff3547;}
+
+@media only screen and (max-width: 600px) {
+    .single-hs-item {
+        height: 550px;
+    }
+    .hero-text h1 {
+        font-size: 30px;
+    }
+    .hero-text p {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+    .owl-carousel .owl-nav button.owl-next {
+        top: auto;
+        margin: 0;
+        bottom: 0px;
+    }
+    .owl-carousel .owl-nav button.owl-prev {
+        top: auto;
+        margin: 0;
+        bottom: 0px;
+    }
+    .owl-dots {
+        bottom: 10px;
+        left: 50px;
+        right: 50px;
+    }
+}
