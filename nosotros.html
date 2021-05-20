@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="css/standard.css">
 </head>
 
-<body id="body" style="background-image: url('assets/FONDO_NOSOTROS.jpg');">
+<body id="body" style="
+background-image: url('assets/FONDO_NOSOTROS.jpg');
+background-size: cover;
+">
     <div class="container-fluid" id="container-fluid">
         <div class="container" id="Main-Container">
             <div class="row" id="LogoMenu-Row" >
@@ -164,7 +167,7 @@ Nuestro viñedo esta ubicado en la región del Alto de Parras, en donde converge
     </div><!--End container Fluid-->
 
     <footer id="footer" style="position:absolute; bottom: 0;">
-      <div class="row" id="Foot-Row">
+      <div class="row" id="Foot-Row" style="width: 100%;">
         <div class="col-10" id="Foot-Content">
           <div class="wrap" id="Foot-Wrap">
             <div class="row" id="Foot-Wrap-Row">
@@ -178,14 +181,8 @@ Nuestro viñedo esta ubicado en la región del Alto de Parras, en donde converge
                     <div class="col-3" id="Contacto" style='margin-top: 0.9375rem;'>
                       <h6>CONTACTO</h6>
                     </div><!--Contacto Div End-->
-                    <div class="col-9" id="Contacto-Text">
-                      <pre class="contacto-text" style="font-size: 0.60rem;
-                      @media (max-width: 600px) {
-                      .facet_sidebar {
-                        display: none;
-                      }
-                      }
-                      ">Blvd. Jose Musa de Leon No. 2411 piso 4
+                    <div class="col-9 contact-description" id="Contacto-Text">
+                      <pre class="contacto-text" style="font-size: 0.60rem;">Blvd. Jose Musa de Leon No. 2411 piso 4
 Saltillo, Coah.
 CP 25198
 Col. los Pinos
