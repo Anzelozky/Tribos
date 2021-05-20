@@ -12,10 +12,10 @@ window.onload = function() {
         ,{
           title: 'Bienvenido',
           confirmButton:'Entendido',
-          callEvent:function(){
-            Set_Read_Cookie();
-            location.replace("https://anzelozky.github.io/Tribos/nosotros.html")
-          }
+          // callEvent:function(){
+          //   Set_Read_Cookie();
+          //   location.replace("https://anzelozky.github.io/Tribos/nosotros.html")
+          // }
         })
       },
       cancelEvent:function(){
@@ -27,7 +27,7 @@ window.onload = function() {
     },
     )
    } else if (isAnAdult != null) {
-    location.replace("https://anzelozky.github.io/Tribos/nosotros.html")
+    // location.replace("https://anzelozky.github.io/Tribos/nosotros.html")
    };
 };
 
